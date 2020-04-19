@@ -99,10 +99,10 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "洛阳师范学院",
+        title: "学校: 洛阳师范学院官方网站",
         href: "http://www.lynu.edu.cn/"
     },{
-        title: "洛阳师范学院贴吧",
+        title: "贴吧: 洛阳师范学院贴吧",
         href: "https://tieba.baidu.com/f?kw=%C2%E5%D1%F4%CA%A6%B7%B6%D1%A7%D4%BA&fr=ala0&tpl=5"
     },{
         title: "知乎：努力奋斗(Mr.Gao)",
@@ -110,5 +110,8 @@ friends: [
     },{
         title: "知乎：终身合作者(deku)",
         href: "https://www.zhihu.com/people/kemisama" 
+    },{
+        title: "码云gitee：我的码云代码托管平台(Mr.Gao)",
+        href: "https://gitee.com/tybscornell" 
     }
 ]
