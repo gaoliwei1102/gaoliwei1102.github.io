@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+本项目仅仅是为了前来Fork的朋友保留的，原则上不再更新。本项目示范网站地址为：https://klovien.github.io 。
 
-You can use the [editor on GitHub](https://github.com/gaoliwei1102/gaoliwei1102.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+三叶草国际语已更名为“格罗比言·全球语”，新的项目地址为：
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* 中文版：https://gitee.com/globien/globien
+* 英文版：https://github.com/globien/globien.github.io
 
-### Markdown
+### 致谢
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. 这个模板是从这里 [BY](https://github.com/qiubaiying/qiubaiying.github.io) fork 的, 感谢作者BY。 
+2. BY的模板应该是从这个模板 [Hux](https://github.com/Huxpro/huxpro.github.io) fork 的, 也一起感谢一下。
+3. 感谢 Jekyll、Github Pages 和 Bootstrap!
 
-```markdown
-Syntax highlighted code block
+### License
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/gaoliwei1102/gaoliwei1102.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/klovien/klovien.github.io/blob/master/LICENSE)。
