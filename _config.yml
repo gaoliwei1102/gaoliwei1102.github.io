@@ -99,16 +99,16 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "三叶草国际语维基词典",
-        href: "https://github.com/klovien/klovien.github.io/wiki"
+        title: "洛阳师范学院",
+        href: "http://www.lynu.edu.cn/"
     },{
-        title: "三叶草国际语互动社区",
-        href: "https://klovien.fandom.com/wiki/Klovien_Interlingua"
+        title: "洛阳师范学院贴吧",
+        href: "https://tieba.baidu.com/f?kw=%C2%E5%D1%F4%CA%A6%B7%B6%D1%A7%D4%BA&fr=ala0&tpl=5"
     },{
-        title: "知乎：人造国际语",
-        href: "https://zhuanlan.zhihu.com/Artificial-International-Language"
+        title: "知乎：努力奋斗(Mr.Gao)",
+        href: "https://www.zhihu.com/people/gao-wei-78-78"
     },{
-        title: "知乎：Henri_Jambo",
-        href: "https://www.zhihu.com/people/henry-jiang-78" 
+        title: "知乎：终身合作者(deku)",
+        href: "https://www.zhihu.com/people/kemisama" 
     }
 ]
