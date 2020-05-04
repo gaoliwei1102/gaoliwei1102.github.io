@@ -1,0 +1,70 @@
+---
+layout:     post
+title:      JSP的两种重定位方式
+subtitle:   JSP动作指令和response对象方法sendRedirect()实现重定位
+date:       2020-5-04
+author:     Mr.Gao
+header-img: img/post-bg-android.jpg
+catalog: false
+tags:
+    - JSP学习
+---
+
+## 在web开发中，我们经常会遇到网页跳转，除了html的a标签、表单提交等跳转方法外，在一般的jsp开发中，这种网页跳转被称作重定向，此次主要记录jsp开发中的两种重定向方式
+
+
+### |1. 利用response对象进行重定向，方法如下：
+
+```Java
+response.sendRedirect(目标网页路径)
+```
+
+目标网页路径既可以填相对路径，也可以填绝对路径(但是要填完整哦)
+
+
+### |2. 使用jsp动作指令实现重定向，方法如下：
+
+```Java
+<jsp:forward page="目标网页路径">
+    //<jsp:param value="" name="">        可以对跳转到指定页面，并传值
+</jsp:forward>
+```
+
+
+### |3. 使用这两种方法跳转, 具有很大的不同, 主要有以下几个方面:  
+
+#### |3.1 从浏览器的地址显示来看  
+    forward方法属于服务器端去请求资源，服务器直接访问目标地址，并对该地址的相应内容进行读取，再把读取的内容发给浏览器，因此客户端浏览器的地址不变。  
+    redirect是告诉客户端，使浏览器知道去请求哪一个地址，相当于客户端重新请求一遍。所以地址显示栏会变。  
+    简单来讲, 使用forward跳转某一页面，但地址栏不变仍是服务器地址，但使用redirect则是直接去访问某一页面地址，所以地址栏会变。 
+ 
+#### |3.2 从数据共享来看  
+    forward转发的页，以及转发到的目标页面能够共享request里面的数据，而redirect转发的页以及转发到的目标页面不能共享request里面的数据。  
+
+#### |3.3 从功能来看  
+    redirect能够重定向到当前应用程序的其它资源，而且还能够重定向到同一个站点的其他应用程序中的资源，甚至是使用绝对url重定向到其它站点的资源。比如，可以通过该方法跳转到百度页面。  
+    ```Java
+        <%
+            response.sendRedirect("https://www.baidu.com");
+        %>
+    ```
+
+    forward方法只能在同一个web应用程序内的资源之间转发请求，可以理解为服务器内部的一种操作。以下代码运行时会报错。  
+    ```Java
+        <jsp:forward page="https://baidu.com"></jsp:forward>            
+    ```  
+#### |3.4 从效率来看  
+    forward效率较高，因为跳转仅发生在服务器端。  
+    redirect效率较低，因为类似于再进行了一次请求。
+    *特别提醒*: response.sendError()也是进行跳转，他的作用是向客户端发送http状态码的出错信息。  
+    常见错误代码如下:
+    ```Java
+         400  Bad Request, 请求出现语法错误
+         401  Unauthorized, 客户试图未经授权访问受密码保护的页面
+         403  Forbidden, 资源不可用
+         404  Not Found, 无法找到指定位置的资源
+         500  Internal Server Error, 服务器遇到了无法预料的情况，不能完成客户的请求。
+    ```
+
+
+### |4. 无论使用jsp动作指令或response的sendRedirect方法进行重定向，各有各的好处，请按需使用。
